@@ -6,13 +6,13 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="parcour.php">Mon parcour</a>
+        <a class="nav-link" href="parcour.html">Mon parcour</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="programmation.php">Programmation</a>
+        <a class="nav-link" href="programmation.html">Programmation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="dao.php">D.A.O.</a>
+        <a class="nav-link" href="dao.html">D.A.O.</a>
       </li>
     </ul>
   </div>
