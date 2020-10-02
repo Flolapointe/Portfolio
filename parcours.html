@@ -5,7 +5,7 @@
          <link rel="stylesheet" type="text/css" href="parcours.css">
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
-    <body style="background-color:rgba(0, 0, 0, 0.20)">
+    <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"style="padding-left: 5%;">
   <a class="navbar-brand" href="index.html">Florent Lapointe</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="parcours.html">Mon parcours</a>
       </li>
       <li class="nav-item">
@@ -26,60 +26,53 @@
   </div>
 </nav>
         </br>
-        <div class="accordion container" id="accordionExample" style="margin-top:5%">
-            <div class="card">
-                <div class="card-header" style="background-color: rgba(0,0,0,.1);" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" style="color:black" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Aujourd'hui
-                        </button>
-                    </h2>
+        
+        <style>
+            .card-body {margin-left: 0px;padding-bottom: 0px;padding-top: 5px;border: solid 1.5px rgba(0, 150, 0, 0.7);}
+            .col {padding-left: 5px; padding-right: 5px;}
+            .row {margin-left: 5px;margin-right: 5px;}
+            .boutons {margin:auto;width:100%}
+            .btn-primari {margin: auto;width: 33%;background-color: rgba(0, 150, 0, 0.7);border-color: rgba(0, 150, 0, 0.7);color: #fff;}
+            .btn-primari:hover {background-color: grey; border-color: grey;}
+        </style>
+        
+        <p class="boutons">
+            <button class="bttn btn-primari" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Aujourd'hui</button>
+            <button class="bttn btn-primari" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Années 2019-2020</button>
+            <button class="bttn btn-primari" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Années 2015-2018</button>
+        </p>
+    
+    <div>
+        <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <ul>
+                        <li>Recherche d'un emploi dans un Bureau d'études, Bureau des méthodes ou en R&D</li>
+                        </br>
+                        <li>Vendeur en boulengerie PAUL</li>
+                    </ul>
                 </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>Recherche d'un emploi dans un Bureau d'études, Bureau des méthodes ou en R&D</li>
-                            </br>
-                            <li>Vendeur en boulengerie PAUL</li>
-                        </ul>
-                    </div>
-                </div>
-                </br>
+              </div>
             </div>
-            <div class="card">
-                <div class="card-header" style="background-color: rgba(0,0,0,.1);" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed"  style="color:black" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        Année 2019
-                        </button>
-                    </h2>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    <ul>
+                        <li>L1 en Physique et Science de l'Ingénieur à la faculté de Strasbourg</li>
+                        </br>
+                        <li>Vendeur en boulengerie PAUL (emploi étudiant)</li>
+                    </ul>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>L1 en Physique et Science de l'Ingénieur à la faculté de Strasbourg</li>
-                            </br>
-                            <li>Vendeur en boulengerie PAUL (emploi étudiant)</li>
-                        </ul>
-                    </div>
-                </div>
-                </br>
+              </div>
             </div>
-            <div class="card">
-                <div class="card-header" style="background-color: rgba(0,0,0,.10);" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed"  style="color:black" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        Années 2015 - 2018
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <h4> DUT en Génie Mécanique et Productique obtenu à l'IUT de Dijon-Auxerre </h4>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                  <div class="card card-body">
+                    <h6> DUT en Génie Mécanique et Productique obtenu à l'IUT de Dijon-Auxerre </h6>
                         <ul>
                             <li class="liste1">Projets et connaissances acquises :</li> <!-- différence de mise en forme pour connaissance et projets -->
                                 <ul>
-                                    <li>Projet : Planche de skateboard motorisée</li>
                                     <li>Projet : Véhicule amhibien</li>
                                     <li>Utilisation du logiciel CREO parametric & simulate</li>
                                     <li>Travail en équipe</li>
@@ -98,15 +91,44 @@
                                     <li class="liste2">Bureau Projet-Qualité chez Sundyne Internationnal S.A. (Longvic)</li>
                                     <div style="font-style: italic">Aide à la compilation de la documentation client, certification et traçabilité matière au sein de l'atelier.</div>
                                 </ul>
-                        
-                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    </body>
+    <footer class="">
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-1" style="max-width: 1.333333%;">
+                    <img src="images/maison.png">
+                </div>
+                <div class="col-2" style="max-width: 22.666667%;flex: 0 0 20.666667%;margin-top: -7px;">
+                    18 Rue de l'Abreuvoir, <p>67000 - STRASBOURG</p>
+                </div>
+                <div class="col-1" style="max-width: 2.333333%;margin-left: 30px;">
+                    <img src="images/mail.png">
+                </div>
+                <div class="col-3" style="margin-top: 3px;">
+                    florent_lapointe@outlook.fr
+                </div>
+                <div class="col-1" style="max-width: 0.333333%;margin-left: 30px;">
+                    <img src="images/portable.png">
+                </div>
+                <div class="col-2" style="margin-top: 4px;max-width: 13.666667%;flex: 0 0 22.666667%;">
+                    06.68.71.39.55
+                </div>
+                <div class="col-1" style="max-width: 4.333333%;margin-left: 30px;">
+                    <img src="images/linkedin.png" style="">
+                </div>
+                <div class="col-1" style="margin-top: 3px;">
+                    <a href="https://www.linkedin.com/in/florent-lapointe/" onclick="window.open(this.href); return false;" style="margin-top: 0px;margin-left: 0px;">Linkedin</a>
                 </div>
             </div>
         </div>
-    </body>
-    <footer>
-    <h6 style="margin-bottom:1.5rem;">Me contacter : 18 rue de l'abreuvoir, 67000 - Strasbourg / Email : florent_lapointe@outlook.fr / Portable : 06.68.71.39.55 / <a href="https://www.linkedin.com/in/florent-lapointe/" onclick="window.open(this.href); return false;">Linkedin</a></h6>
-</footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

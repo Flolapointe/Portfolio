@@ -4,7 +4,7 @@
          <link rel="stylesheet" type="text/css" href="index.css">
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
-    <body style="background-color:rgba(0, 0, 0, 0.20)">
+    <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark"style="padding-left: 5%;">
             <a class="navbar-brand" href="index.html">Florent Lapointe</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,51 +24,57 @@
               </ul>
             </div>
         </nav>
-        </br>
+       
+        <style>
+            .btn-success:hover{background-color: rgba(0, 150, 0, 0.7);border-color: rgba(0, 150, 0, 0.7);}
+            .btn-success{background-color: grey; border-color: grey;}
+            .btn-primary:hover{background-color: rgba(0, 150, 150, 0.7);border-color: rgba(0, 150, 150, 0.7);}
+            .btn-primary{background-color: grey; border-color: grey;}
+            .btn-danger:hover{background-color: rgba(200, 0, 0, 0.7);border-color: rgba(200, 0, 0, 0.7);}
+            .btn-danger{background-color: grey; border-color: grey;}
+            .card {border: solid 2px grey}
+            h4{color: rgba(0, 0, 0, 0.8);}
+        </style>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card bg-dark text-black">
-                    <img src="Images/simple-timeline-template-SmartArt-graphics.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <a href="parcours.html" style="color: black">
-                                <h5 class="card-title" >Mon parcours</h5>
-                            </a>
+            <div class="row" style="margin-top:5%">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Programmation</h4>
+                            <p class="card-text" style="color: rgba(0, 0, 0, 0.5);">Cette partie concerne mes connaissances en programmation acquises en autodidacte.</p>
+                            <a href="programmation.html" class="btn btn-primary" style="float:right">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">C.A.O.</h4>
+                            <p class="card-text" style="color: rgba(0, 0, 0, 0.5);">Une page dédiée à la Conception Assistée par Ordinateur que j'ai pu effectuer en cours ou à titre personnel</p>
+                            <a href="dao.html" class="btn btn-danger" style="float:right">Voir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
-            </br>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card bg-dark text-white">
-                    <img src="Images/programain.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <a href="programmation.html" style="color: white">
-                                <h5 class="card-title" style="text-align:center;margin-top: 5%">Programmation</h5>
-                            </a>
-                            
+        </div>
+        <div class="container">
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Mon parcours</h4>
+                            <p class="card-text" style="color: rgba(0, 0, 0, 0.5);">Cette partie concerne mon parcours professionnel : expériences et formations</p>
+                            <a href="parcours.html" class="btn btn-success" style="float:right;">Voir plus</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="card bg-dark text-white">
-                        <img src="Images/plandessin.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <a href="dao.html" style="color: black">
-                                <h5 class="card-title" style="text-align:center;margin-top: 5%">C.A.O.</h5>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>            
+            </div>
         </div>
         </br>
+        
+        </br>
     </body>
-    <footer class="">
-
-       
+    <footer>
         <div class="container">
            
             <div class="row">
@@ -91,19 +97,13 @@
                     06.68.71.39.55
                 </div>
                 <div class="col-1" style="max-width: 4.333333%;margin-left: 30px;">
-                    <img src="images/linkedin.png" style="
-    ">
+                    <img src="images/linkedin.png" >
                 </div>
                 <div class="col-1" style="margin-top: 3px;">
-                    <a href="https://www.linkedin.com/in/florent-lapointe/" onclick="window.open(this.href); return false;" style="
-        margin-top: 0px;
-        margin-left: 0px;
-    ">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/florent-lapointe/" onclick="window.open(this.href); return false;" style="margin-top: 0px;margin-left: 0px;">Linkedin</a>
                 </div>
             </div>
-           
         </div>
-       
     </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
